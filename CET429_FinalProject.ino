@@ -235,7 +235,7 @@ void displayToWeb(double tempF, double humidity) {//Function to display temp/hum
 void sendToThingSpeak(double tempF, double humidity) {//Send temp and humidity data to ThingSpeak for real time graphs and MATLAB integration. Link: https://thingspeak.mathworks.com/channels/2920816
   WiFiClient client;
   const char* server = "api.thingspeak.com";
-  String apiKey = "5M4GJYPPANL4AMFE"; //ThingSpeak Write API key
+  String apiKey = "XXXXXXXXXXXXXX"; //ThingSpeak Write API key
 
   if (client.connect(server, 80)) {
     String url = "/update?api_key=" + apiKey;
